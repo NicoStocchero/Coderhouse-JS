@@ -8,7 +8,7 @@ Este proyecto es un **sistema de reservas y gestión de jugadores**, desarrollad
 
 - Esta versión del proyecto es una reestructuración total respecto a mi propuesta anterior. Si bien el sistema anterior ya funcionaba correctamente y seguía buenas prácticas como modularización, Clean Architecture y separación de responsabilidades, el enfoque no coincidía con lo enseñado durante la cursada.
 
-- Por ese motivo, decidí rehacer todo el sistema de reservas **desde cero**, manteniéndome 100% dentro del marco que se pidió en la última clase y en las consignas del curso: sin estructura modular, sin separación por archivos ni carpetas, y concentrando la lógica en un máximo de 2–3 archivos como se sugirió.
+- Por ese motivo, decidí rehacer todo el sistema de reservas **desde cero**, manteniéndome 100% dentro del marco que se pidió en la última clase y en las consignas del curso: sin estructura modular, sin separación por archivos ni carpetas, y concentrando la lógica en un máximo de 4 archivos para mantener la legibilidad.
 
 - **Evité el uso de múltiples archivos JS separados** (como en mi proyecto original), ya que entiendo que eso podría perjudicar la performance con JS Vanilla si se lleva a un entorno real y, sobre todo, que escapa al espíritu del proyecto evaluado. Aunque no comparto completamente ese criterio desde el punto de vista profesional, acepto que este proyecto es académico y me adecué a lo solicitado.
 
