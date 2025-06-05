@@ -4,6 +4,24 @@ Este proyecto es un **sistema de reservas y gestión de jugadores**, desarrollad
 
 ---
 
+## Aclaraciones sobre esta entrega
+
+- Esta versión del proyecto es una reestructuración total respecto a mi propuesta anterior. Si bien el sistema anterior ya funcionaba correctamente y seguía buenas prácticas como modularización, Clean Architecture y separación de responsabilidades, el enfoque no coincidía con lo enseñado durante la cursada.
+
+- Por ese motivo, decidí rehacer todo el sistema de reservas **desde cero**, manteniéndome 100% dentro del marco que se pidió en la última clase y en las consignas del curso: sin estructura modular, sin separación por archivos ni carpetas, y concentrando la lógica en un máximo de 2–3 archivos como se sugirió.
+
+- **Evité el uso de múltiples archivos JS separados** (como en mi proyecto original), ya que entiendo que eso podría perjudicar la performance con JS Vanilla si se lleva a un entorno real y, sobre todo, que escapa al espíritu del proyecto evaluado. Aunque no comparto completamente ese criterio desde el punto de vista profesional, acepto que este proyecto es académico y me adecué a lo solicitado.
+
+- Decidí **no usar un archivo `.json` externo** ni simular datos remotos, ya que en esta versión más simplificada no había lógica que justificara su uso. En mi otro proyecto esto tenía sentido porque existía una lógica asíncrona para cargar jugadores, reservas, turnos pasados, etc. Aquí opté por usar únicamente `localStorage`.
+
+- **El CSS es heredado** de la primera versión del proyecto, ya que estaba bien estructurado visualmente. No lo recorté ni lo reescribí por completo para no perder claridad visual, aunque muchas funciones visuales (como estadísticas o filtros) fueron removidas para cumplir la consigna de no tener múltiples módulos.
+
+- Intenté aplicar **buenas prácticas de desarrollo** dentro del nuevo esquema: reutilizar funciones cuando era posible, mantener una nomenclatura clara, encapsular lógica en funciones individuales y validar correctamente los datos. Aún así, admito que el código podría contener algunos errores menores por el poco tiempo que tuve para rearmarlo completo.
+
+- **Clean Architecture no fue aplicada en esta entrega**, ya que entendí que, para esta etapa, su implementación era contraproducente. Me pareció más valioso mostrar que sé adaptarme a las necesidades y contexto de la consigna.
+
+---
+
 ## 🧩 Funcionalidades
 
 - Registro, edición y eliminación de jugadores.
