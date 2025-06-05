@@ -1,0 +1,38 @@
+/* ==========================================================================
+   SECCIONES - Bloques principales de cada vista
+   Incluye reservas, jugadores, estadísticas, etc.
+   ========================================================================== */
+
+.contenedor-secciones {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Secciones individuales (ej. jugadores, reservas) */
+.seccion-reservas,
+.seccion-jugadores {
+  width: 100%;
+  margin: 1rem auto 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+}
+
+/* Header de cada sección con título y badge */
+.header-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-seccion h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}

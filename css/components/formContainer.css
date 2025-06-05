@@ -1,0 +1,55 @@
+/* ==========================================================================
+   FORM CONTAINER - Tarjetas para formularios y estadísticas
+   ==========================================================================
+   Contenedor visual de formularios, stats u otras secciones compactas.
+   Incluye variantes como .estadisticas con estilos internos.
+   ========================================================================== */
+
+.tarjeta-formulario {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.tarjeta-formulario h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #111827;
+  text-align: center;
+}
+
+.tarjeta-formulario p {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tarjeta-formulario .boton-principal {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Variante estadística */
+.tarjeta-formulario.estadisticas {
+  text-align: left;
+}
+
+.tarjeta-formulario.estadisticas h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.tarjeta-formulario.estadisticas p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #111827;
+  margin: 0.25rem 0 1rem;
+}

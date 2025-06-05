@@ -1,0 +1,39 @@
+/* ==========================================================================
+   RENACE PADEL CLUB - ESTILOS PRINCIPALES
+   Este archivo importa todos los estilos del sistema de forma modular
+   ========================================================================== */
+
+/* === 1. BASE === */
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/formularios.css");
+@import url("./base/funcionales.css");
+@import url("./base/tipografia.css");
+@import url("./base/animaciones.css");
+
+/* === 2. SHARED - Estilos reutilizables === */
+@import url("./shared/inputs.css");
+@import url("./shared/labels.css");
+@import url("./shared/botones.css");
+@import url("./shared/mensajes.css");
+
+/* === 3. LAYOUT GENERAL === */
+@import url("./layout/grid.css");
+@import url("./layout/responsive.css");
+
+/* === 4. COMPONENTES VISUALES === */
+@import url("./components/titles.css");
+@import url("./components/botonesSeleccionables.css");
+@import url("./components/cardReserva.css");
+@import url("./components/cards.css");
+@import url("./components/formContainer.css");
+@import url("./components/nav.css");
+@import url("./components/secciones.css");
+@import url("./components/sliderReserva.css");
+@import url("./components/badges.css");
+@import url("./components/footer.css");
+
+/* === 5. MÓDULOS ESPECÍFICOS === */
+@import url("./features/jugadores.css");
+@import url("./features/reservas.css");
+@import url("./features/estadisticas.css");

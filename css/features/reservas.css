@@ -1,0 +1,18 @@
+/* ==========================================================================
+   RESERVAS - Estilos específicos del módulo de reservas
+   ==========================================================================
+   Incluye botón principal de acción, info de reserva y secciones internas
+   que no se comparten con otros módulos.
+   ========================================================================== */
+
+/* Botón de confirmar reserva (ubicación centrada) */
+.btn-confirmar-reserva {
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+/* Info de reserva dentro de una tarjeta */
+.info-reserva {
+  flex: 1;
+  min-width: 220px;
+}

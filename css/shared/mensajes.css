@@ -1,0 +1,38 @@
+/* ==========================================================================
+   MESSAGES - Mensajes de estado reutilizables
+   ==========================================================================
+   Diseños para mensajes de error, éxito o estado general.
+   Se aplican a formularios y vistas que requieran feedback al usuario.
+   ========================================================================== */
+
+.mensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+  border: 1px solid transparent;
+  text-align: center;
+  box-shadow: var(--sombra-suave);
+}
+
+.mensaje-error {
+  background-color: color-mix(in srgb, var(--color-error) 7%, white);
+  color: var(--color-error);
+  border-color: color-mix(in srgb, var(--color-error) 20%, white);
+}
+
+.mensaje-exito {
+  background-color: color-mix(in srgb, var(--color-exito) 10%, white);
+  color: var(--color-exito);
+  border-color: color-mix(in srgb, var(--color-exito) 30%, white);
+}
+
+.mensaje i {
+  font-size: 1.1rem;
+  color: inherit;
+}

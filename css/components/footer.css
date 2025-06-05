@@ -1,0 +1,21 @@
+/* ==========================================================================
+   FOOTER - Pie de página general de la aplicación
+   ==========================================================================
+   Estilos de texto, separación y fondo del footer estático en todas las vistas.
+   ========================================================================== */
+
+.footer-principal {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  padding: 2rem 1rem;
+  border-top: 1px solid #eee;
+  margin-top: 3rem;
+  background-color: #fafafa;
+}
+
+.footer-principal .creditos {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}

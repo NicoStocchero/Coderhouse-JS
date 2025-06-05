@@ -1,0 +1,23 @@
+/* ==========================================================================
+   FORMULARIOS ESPECÍFICOS - Campos con estilos por tipo
+   ==========================================================================
+   Ajustes de color, foco y paddings particulares en inputs de texto/email/teléfono
+   ========================================================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f97316;
+  background-color: #fff;
+}

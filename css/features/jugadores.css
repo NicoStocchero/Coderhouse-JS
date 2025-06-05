@@ -1,0 +1,26 @@
+/* ==========================================================================
+   JUGADORES - Estilos específicos del módulo de jugadores
+   ==========================================================================
+   Aplica sobre las tarjetas de jugador: headers, botones, info específica.
+   ========================================================================== */
+
+/* Header específico de jugador */
+.header-jugador {
+  display: flex;
+  align-items: center;
+}
+
+/* Info del jugador dentro de tarjeta */
+.info-jugador {
+  flex: 1;
+  min-width: 220px;
+}
+
+.bloque-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.badge-derecha {
+  margin-left: auto;
+}

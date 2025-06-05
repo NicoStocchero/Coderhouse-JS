@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Básico para que el navegador entienda todo bien desde el arranque -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título visible en la pestaña + usado por buscadores -->
+    <title>Sistema de Gestión de Turnos</title>
+
+    <!-- Preconexión a recursos externos para acelerar carga (CDNs) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Fuente Inter: más moderna, profesional y legible -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos externos primero (iconos), luego los nuestros -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Libs JS externas (todas con defer para no bloquear el render) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/es.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/validator@13.7.0/validator.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+    <!-- Nuestro entrypoint, con module para poder usar imports -->
+    <script type="module" src="/main.js"></script>
+
+    <!-- Un poco de SEO básico + Open Graph por si se comparte el link -->
+    <meta
+      name="description"
+      content="Sistema de reservas para clubes de pádel. Gestión simple y profesional."
+    />
+    <meta name="author" content="Nico Stocchero" />
+    <meta property="og:title" content="Sistema de Gestión de Pádel" />
+    <meta
+      property="og:description"
+      content="Gestioná turnos y reservas sin complicaciones."
+    />
+    <meta
+      property="og:image"
+      content="https://sistemadegestiondereservas.com/og-image.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+
+  </head>
+
+  <body>
+    <header class="header-principal">
+      <div class="logo-club">Sistema de Gestión de Turnos</div>
+      <nav class="nav-principal">
+        <a href="index.html" class="nav-item activo">Inicio</a>
+      </nav>
+    </header>
+
+    <main class="layout-principal contenedor-central">
+      <!-- Columna izquierda: Formularios -->
+      <div class="columna-formularios">
+        <section class="tarjeta-formulario">
+          <h2>Formulario de Jugador</h2>
+          <form id="formulario-jugador">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <p id="error-nombre" class="mensaje-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required />
+              <p id="error-apellido" class="mensaje-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <p id="error-email" class="mensaje-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required />
+              <p id="error-telefono" class="mensaje-error"></p>
+            </div>
+            <button type="submit" class="boton-principal">Enviar</button>
+          </form>
+        </section>
+
+      <!-- Columna derecha: Estadísticas -->
+      <section class="tarjeta-formulario">
+        <h2>Formulario de Reserva</h2>
+        <form id="formulario-reserva">
+          <div class="form-group">
+            <label for="select-jugador">Jugador</label>
+            <select id="select-jugador" required>
+              <option disabled selected value="">Seleccionar jugador</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="select-fecha">Fecha</label>
+            <select id="select-fecha" required>
+              <option disabled selected value="">Seleccionar fecha</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="select-hora">Horario</label>
+            <select id="select-hora" required>
+              <option disabled selected value="">Seleccionar una opción</option>
+            </select>
+          </div>
+      
+          <button type="submit" class="boton-principal">Confirmar reserva</button>
+        </form>
+      </section>
+
+      <!-- Sección inferior con jugadores y reservas -->
+      <div class="contenedor-secciones">
+        <section class="seccion-jugadores">
+          <div class="header-seccion">
+            <h2>Jugadores Registrados</h2>
+          </div>
+          <div id="lista-jugadores" class="contenedor-jugadores"></div>
+        </section>
+
+        <section class="seccion-reservas">
+          <div class="header-seccion">
+            <h2>Reservas realizadas</h2>
+            <span id="badge-cantidad-reservas" class="badge-cantidad"
+              >0 reservas</span
+            >
+          </div>
+          <div id="lista-reservas" class="contenedor-reservas"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer-principal">
+      <p>
+        &copy; 2025 Sistema de Gestión de Turnos. Todos los derechos
+        reservados.
+      </p>
+      <p class="creditos">Desarrollado por Nicolás Stocchero</p>
+    </footer>
+  </body>
+</html>

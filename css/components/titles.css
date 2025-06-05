@@ -1,0 +1,24 @@
+/* ==========================================================================
+   TITLES - Encabezados visuales reutilizables para pantallas y secciones
+   ==========================================================================
+   - .titulo-pantalla → encabezado principal de la vista (pantalla entera)
+   - .titulo-seccion → subtítulo de secciones dentro de la pantalla
+   ========================================================================== */
+.titulo-pantalla {
+  font-size: var(--font-titulo-pantalla);
+  font-weight: 700;
+  line-height: var(--line-height-titulo);
+  color: var(--color-texto-principal);
+  font-family: var(--font-seccion-titulo);
+  margin-bottom: 1rem;
+}
+
+.titulo-seccion {
+  font-size: var(--font-titulo-seccion);
+  font-weight: 600;
+  line-height: var(--line-height-seccion);
+  color: var(--color-texto-principal);
+  font-family: var(--font-seccion-titulo);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}

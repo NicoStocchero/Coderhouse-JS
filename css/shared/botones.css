@@ -1,0 +1,59 @@
+/* ==========================================================================
+   BUTTONS - Botones reutilizables del sistema
+   ==========================================================================
+   Incluye estilo base para botones, variantes primarias, secundarias
+   y botones pequeños. También contempla íconos dentro de botones.
+   ========================================================================== */
+
+button {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  padding: 0.6rem 1.1rem;
+  font-size: 0.92rem;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-width: 130px;
+  font-family: inherit;
+}
+
+button i {
+  margin-right: 0.5rem;
+}
+
+/* Botón principal */
+.boton-principal {
+  background-color: var(--color-primario);
+  color: white;
+  border: 2px solid transparent;
+}
+.boton-principal:hover {
+  background-color: color-mix(in srgb, var(--color-primario) 80%, black);
+  box-shadow: var(--sombra-suave);
+  transform: translateY(-1px); /* leve elevación */
+}
+
+/* Botón secundario */
+.boton-secundario {
+  background-color: white;
+  border: 2px solid var(--color-primario);
+  color: var(--color-primario);
+}
+.boton-secundario:hover {
+  background-color: color-mix(in srgb, var(--color-acento) 10%, white);
+  border-color: var(--color-acento);
+}
+
+/* Tamaño chico */
+.boton--chico {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  min-width: unset;
+  border-radius: 16px;
+  gap: 0.2rem;
+  line-height: 1.2;
+}

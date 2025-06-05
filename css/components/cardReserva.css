@@ -1,0 +1,130 @@
+/* ==========================================================================
+   CARD RESERVA / JUGADOR - Tarjetas de información visual
+   ==========================================================================
+   Contiene la estructura y estilo visual de las tarjetas de reservas y
+   de jugadores: headers, body, datos, acciones.
+   ========================================================================== */
+
+/* === Tarjeta general === */
+.reserva,
+.jugador {
+  width: 100%;
+  max-width: 100%;
+  max-width: 375px;
+  min-width: unset;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  border: 1px solid var(--color-linea);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.reserva:hover,
+.jugador:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+/* === Contenido interior === */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* === Cabeceras === */
+.card-header,
+.header-jugador {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.cabecera-reserva {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.3rem;
+}
+
+.cabecera-fecha {
+  display: inline-flex;
+  margin-left: auto;
+  color: var(--color-exito);
+  font-weight: 600;
+}
+
+.cabecera-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Títulos y datos === */
+.nombre-jugador,
+.jugador-reserva {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jugador-reserva {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+
+.icono-card {
+  color: var(--color-primario);
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
+}
+
+.info-jugador,
+.info-reserva {
+  flex: 1;
+  min-width: 220px;
+}
+
+.dato-cancha,
+.dato-horario {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #999;
+}
+
+/* === Acciones === */
+.acciones-reserva,
+.acciones-jugador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.acciones-jugador button,
+.acciones-reserva button {
+  flex: 0 0 auto;
+  min-width: 120px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  text-align: center;
+}

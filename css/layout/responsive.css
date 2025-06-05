@@ -1,0 +1,84 @@
+/* =============================
+   MOBILE (≤480px)
+   ============================= */
+@media (max-width: 480px) {
+  .header-principal {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .nav-principal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo-club {
+    justify-content: center;
+  }
+
+  .form-group input {
+    font-size: 0.95rem;
+  }
+
+  .boton-principal {
+    width: 100%;
+  }
+}
+
+/* =============================
+     TABLETS (≤768px)
+     ============================= */
+@media (max-width: 768px) {
+  .contenedor-reservas,
+  .contenedor-jugadores {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    padding: 0;
+  }
+
+  .botones-accion {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .grid-opciones.opciones-fechas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-opciones.opciones-horarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-opciones.opciones-canchas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .badge-cantidad {
+    align-self: flex-start;
+  }
+}
+
+/* =============================
+     LAPTOPS / SMALL DESKTOPS (≤1024px)
+     ============================= */
+@media (max-width: 1024px) {
+  .layout-principal {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .columna-formularios,
+  .columna-secundaria {
+    width: 100%;
+  }
+
+  .tarjeta-formulario {
+    margin: 0 auto 2rem;
+  }
+
+  .header-seccion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

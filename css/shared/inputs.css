@@ -1,0 +1,52 @@
+/* ==========================================================================
+   INPUTS - Estilos base para campos de entrada de datos
+   ==========================================================================
+   Incluye campos de texto, selects y variantes con íconos integrados.
+   ========================================================================== */
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: var(--radius-grande);
+  border: 1px solid var(--color-borde-suave);
+  background-color: var(--color-tarjeta);
+  color: var(--color-texto-principal);
+  font-family: inherit;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,
+select::placeholder {
+  color: var(--color-muted);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primario) 30%, white);
+  outline: none;
+}
+
+/* === INPUT CON ÍCONO === */
+.input-con-icono {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-con-icono i {
+  position: absolute;
+  left: 1rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.input-con-icono input,
+.input-con-icono select {
+  padding-left: 2.5rem;
+  background-color: var(--color-fondo-base);
+}

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   CARDS - Tarjetas informativas generales
+   ==========================================================================
+   Tarjetas visuales de resúmenes, info secundaria o dashboards.
+   No confundir con tarjetas de reservas o jugadores específicas.
+   ========================================================================== */
+
+.card {
+  background-color: #fff;
+  border-left: 4px solid var(--color-primario);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.card-header .icono-card {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: var(--color-primario);
+}
+
+/* Botón suelto de acción */
+.botones-accion {
+  background-color: #ff5c2c;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.dato-icono {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-texto-principal);
+  margin-bottom: 0.5rem;
+  margin-right: 0.4rem;
+}

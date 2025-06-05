@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ESTADÍSTICAS - Panel tipo dashboard para métricas
+   ========================================================================== */
+
+.estadisticas {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Título general */
+.estadisticas .titulo-pantalla {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: left;
+}
+
+/* Grilla de tarjetas */
+.estadisticas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjeta de cada métrica */
+.card-estadistica {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.card-estadistica:hover {
+  transform: translateY(-2px);
+}
+
+/* Título de la métrica */
+.card-estadistica h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Valor de la métrica */
+.card-estadistica p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primario, #f97316); /* Naranja por defecto */
+  margin: 0;
+}
+
+/* Tarjeta con gráfico */
+.card-chart {
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.card-chart h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}

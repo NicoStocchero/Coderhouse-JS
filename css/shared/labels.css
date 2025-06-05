@@ -1,0 +1,15 @@
+/* ==========================================================================
+   LABELS - Etiquetas de formularios reutilizables
+   ==========================================================================
+   Estilo base para todos los elementos <label>, asegurando consistencia
+   tipográfica y espaciado en formularios de todo el sistema.
+   ========================================================================== */
+
+label {
+  font-weight: var(--font-weight-bold);
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-texto-principal);
+  font-size: 0.96rem;
+  font-weight: 500;
+}

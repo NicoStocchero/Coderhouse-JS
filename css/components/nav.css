@@ -1,0 +1,60 @@
+/* ==========================================================================
+   NAV - Encabezado principal y navegación
+   ==========================================================================
+   Estilos del header sticky, logo, y navegación principal de secciones.
+   Incluye animaciones y estados activos.
+   ========================================================================== */
+
+/* Header superior */
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo + texto */
+.logo-club {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  gap: 0.5rem;
+}
+
+/* Navegación principal */
+.nav-principal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.activo {
+  color: var(--color-primario);
+}
+
+.nav-item.activo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primario);
+  border-radius: 2px;
+}

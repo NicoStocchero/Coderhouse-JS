@@ -1,0 +1,152 @@
+/* ==========================================================================
+   BOTONES SELECCIONABLES - Componentes de selección visual
+   ==========================================================================
+   Botones circulares y cuadrados para seleccionar fechas, horarios y canchas.
+   Incluye sus estilos por defecto y su estado `.seleccionado`.
+   ========================================================================== */
+
+/* === Botón de fecha === */
+.btn-fecha {
+  border: unset !important;
+  min-width: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 40px;
+  height: 40px;
+  background: var(--color-fondo-base);
+  color: var(--color-texto-principal);
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-regular);
+  border: none;
+  border-radius: 50% !important;
+  transition: all 0.2s ease;
+}
+
+.btn-fecha.seleccionado {
+  background: var(--color-primario);
+  border-color: var(--color-primario);
+  box-shadow: 0 2px 6px rgba(0, 3, 8, 0.15);
+}
+
+.btn-fecha.seleccionado .texto-dia,
+.btn-fecha.seleccionado .texto-numero {
+  color: white;
+}
+
+.texto-dia {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  line-height: 1;
+}
+
+.texto-numero {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-texto-principal);
+  line-height: 1;
+}
+
+/* === Botón de horario === */
+.btn-horario {
+  min-width: unset;
+  width: 70px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-fondo-base);
+  border-radius: 16px;
+  box-shadow: var(--sombra-suave);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.btn-horario.seleccionado {
+  background: var(--color-primario);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 3, 8, 0.15);
+}
+
+/* === Botón de cancha === */
+.btn-cancha {
+  min-width: unset;
+  width: 100px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-fondo-base);
+  border-radius: var(--radius-grande);
+  box-shadow: var(--sombra-suave);
+  transition: all 0.2s ease;
+  padding: 0.4rem;
+  text-align: center;
+  white-space: normal;
+  gap: 0.3rem;
+  font-family: inherit;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: none;
+}
+
+.texto-cancha-nombre {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.texto-cancha-duracion {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-texto-principal);
+  line-height: 1;
+}
+
+.btn-cancha.seleccionado {
+  box-shadow: 0 2px 6px rgba(0, 3, 8, 0.15);
+}
+
+.btn-cancha.seleccionado .texto-cancha-nombre,
+.btn-cancha.seleccionado .texto-cancha-duracion {
+  color: white;
+}
+
+/* Boton slider */
+.btn-cerrar-slider {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9ca3af;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+
+  border-radius: 50%;
+}
+
+.btn-cerrar-slider:hover {
+  color: #111827;
+}
+
+.btn-cerrar-slider i {
+  pointer-events: none;
+}

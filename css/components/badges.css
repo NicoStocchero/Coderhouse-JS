@@ -1,0 +1,40 @@
+/* ==========================================================================
+   BADGES - Etiquetas visuales de estado
+   ==========================================================================
+   Pequeños indicadores de estado con color y texto.
+   Usados en listados, tarjetas y formularios.
+   ========================================================================== */
+
+.badge {
+  padding: 0.25rem 0.65rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: #eee;
+  color: var(--color-texto-principal);
+  text-transform: uppercase;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.badge-activo {
+  background-color: color-mix(in srgb, var(--color-exito) 10%, white);
+  color: var(--color-exito);
+}
+
+/* Badge de cantidad (usada en encabezados de secciones) */
+.badge-cantidad {
+  background-color: #f9fafb;
+  color: #f97316;
+  padding: 0.4rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0px 0 1px rgba(0, 3, 8, 0.25);
+  font-weight: 600;
+  font-size: 0.875rem;
+}

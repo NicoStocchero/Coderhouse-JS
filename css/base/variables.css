@@ -1,0 +1,43 @@
+:root {
+  /* Colores principales */
+  --color-primario: #ff6b3c;
+  --color-secundario: #2d2e32;
+  --color-acento: #ffb894;
+  --color-exito: #27ae60;
+  --color-error: #ff4e4e;
+
+  /* Fondo y superficie */
+  --color-fondo: #f3f6fb;
+  --color-fondo-base: #fa5a2a;
+  --color-tarjeta: #ffffff;
+  --color-linea: #e0e0e0;
+
+  /* Tipografía */
+  --color-texto: #1a1a1a;
+  --color-texto-principal: #1a1a1a;
+  --color-muted: #6a6a6a;
+  --color-deshabilitado: #333;
+
+  /* Sombras */
+  --sombra-suave: 0 0 0 0 transparent;
+  --sombra-tarjeta: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Tipografía variables */
+  --font-seccion-titulo: "Inter", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+
+  --font-size-base: 14px;
+  --font-size-pequeño: 12px;
+  --font-titulo-pantalla: 24px;
+  --font-titulo-seccion: 20px;
+  --font-titulo-subseccion: 16px;
+
+  --line-height-titulo: 32px;
+  --line-height-seccion: 28px;
+  --line-height-subseccion: 24px;
+
+  /* Medidas base */
+  --radius-grande: 16px;
+  --alto-boton: 64px;
+}
